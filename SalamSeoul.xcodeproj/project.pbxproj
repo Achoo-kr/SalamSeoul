@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360A25182A05BBCE00852676 /* SalamKoreaProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360A25172A05BBCE00852676 /* SalamKoreaProView.swift */; };
+		360A251B2A0654EB00852676 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360A251D2A0654EB00852676 /* Localizable.strings */; };
+		360A25202A0668F800852676 /* SelectingLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360A251F2A0668F800852676 /* SelectingLanguageView.swift */; };
+		3632185529FCA40B0002E672 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632185429FCA40B0002E672 /* Calendar.swift */; };
+		3632185729FCA41D0002E672 /* CalendarClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632185629FCA41D0002E672 /* CalendarClient.swift */; };
+		3632185929FCA42C0002E672 /* PrayerTimingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632185829FCA42C0002E672 /* PrayerTimingFeature.swift */; };
+		3632185B29FCA4600002E672 /* PrayerTimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632185A29FCA4600002E672 /* PrayerTimingView.swift */; };
+		3632186129FCB7A70002E672 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632186029FCB7A70002E672 /* ProfileView.swift */; };
+		3632186329FCBF6F0002E672 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632186229FCBF6F0002E672 /* User.swift */; };
+		3632186529FCC1940002E672 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632186429FCC1940002E672 /* RegistrationView.swift */; };
+		3632186929FCCC560002E672 /* RegistrationFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632186829FCCC560002E672 /* RegistrationFeature.swift */; };
+		3632186B29FCCD030002E672 /* FirebaseAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632186A29FCCD030002E672 /* FirebaseAuthClient.swift */; };
+		364EC78E2A018A3500033C32 /* PrayerTimingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC78D2A018A3500033C32 /* PrayerTimingCellView.swift */; };
+		364EC7902A01C02400033C32 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC78F2A01C02400033C32 /* CustomTabBar.swift */; };
+		368B6FED29FFA5A000032E4B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 368B6FEC29FFA5A000032E4B /* GoogleMobileAds */; };
+		368B6FEF29FFACD300032E4B /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B6FEE29FFACD300032E4B /* BannerAd.swift */; };
+		36F9E72929F2B9E700F478C4 /* SalamSeoulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E72829F2B9E700F478C4 /* SalamSeoulApp.swift */; };
+		36F9E72B29F2B9E700F478C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E72A29F2B9E700F478C4 /* ContentView.swift */; };
+		36F9E72D29F2B9E800F478C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F9E72C29F2B9E800F478C4 /* Assets.xcassets */; };
+		36F9E73029F2B9E800F478C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F9E72F29F2B9E800F478C4 /* Preview Assets.xcassets */; };
+		36F9E73829F2BA0A00F478C4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E73729F2BA0A00F478C4 /* ComposableArchitecture */; };
+		36F9E73D29F2BC1600F478C4 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E73C29F2BC1600F478C4 /* FirebaseAnalytics */; };
+		36F9E73F29F2BC1600F478C4 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E73E29F2BC1600F478C4 /* FirebaseAnalyticsSwift */; };
+		36F9E74129F2BC1600F478C4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E74029F2BC1600F478C4 /* FirebaseAuth */; };
+		36F9E74329F2BC1600F478C4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E74229F2BC1600F478C4 /* FirebaseDatabase */; };
+		36F9E74529F2BC1600F478C4 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E74429F2BC1600F478C4 /* FirebaseDatabaseSwift */; };
+		36F9E74729F2BC1600F478C4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E74629F2BC1600F478C4 /* FirebaseFirestore */; };
+		36F9E74929F2BC1600F478C4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36F9E74829F2BC1600F478C4 /* FirebaseFirestoreSwift */; };
+		36F9E76F29F8868600F478C4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E76E29F8868600F478C4 /* Restaurant.swift */; };
+		36F9E77129F8883600F478C4 /* FirebaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E77029F8883600F478C4 /* FirebaseApiClient.swift */; };
+		36F9E77629F88C1E00F478C4 /* RestaurantDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E77529F88C1E00F478C4 /* RestaurantDetailFeature.swift */; };
+		36F9E77829F88C2D00F478C4 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E77729F88C2D00F478C4 /* RestaurantDetailView.swift */; };
+		36F9E77B29F890A100F478C4 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E77A29F890A100F478C4 /* RestaurantCell.swift */; };
+		36F9E77D29F890C100F478C4 /* RestaurantMainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E77C29F890C100F478C4 /* RestaurantMainFeature.swift */; };
+		36F9E77F29F890DC00F478C4 /* RestaurantMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E77E29F890DC00F478C4 /* RestaurantMainView.swift */; };
+		36F9E78329F89A2400F478C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36F9E78229F89A2400F478C4 /* GoogleService-Info.plist */; };
+		36F9E7D029FAAD6900F478C4 /* HaramDeterctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E7CF29FAAD6900F478C4 /* HaramDeterctorView.swift */; };
+		36F9E7D229FAAD8900F478C4 /* DataScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E7D129FAAD8900F478C4 /* DataScannerVC.swift */; };
+		36F9E7D429FAADB800F478C4 /* TextScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E7D329FAADB800F478C4 /* TextScannerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		360A25172A05BBCE00852676 /* SalamKoreaProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamKoreaProView.swift; sourceTree = "<group>"; };
+		360A251C2A0654EB00852676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		360A251E2A0654ED00852676 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		360A251F2A0668F800852676 /* SelectingLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingLanguageView.swift; sourceTree = "<group>"; };
+		3632185429FCA40B0002E672 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		3632185629FCA41D0002E672 /* CalendarClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarClient.swift; sourceTree = "<group>"; };
+		3632185829FCA42C0002E672 /* PrayerTimingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimingFeature.swift; sourceTree = "<group>"; };
+		3632185A29FCA4600002E672 /* PrayerTimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimingView.swift; sourceTree = "<group>"; };
+		3632186029FCB7A70002E672 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3632186229FCBF6F0002E672 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3632186429FCC1940002E672 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		3632186829FCCC560002E672 /* RegistrationFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFeature.swift; sourceTree = "<group>"; };
+		3632186A29FCCD030002E672 /* FirebaseAuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthClient.swift; sourceTree = "<group>"; };
+		364EC78D2A018A3500033C32 /* PrayerTimingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimingCellView.swift; sourceTree = "<group>"; };
+		364EC78F2A01C02400033C32 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		368B6FEA29FEB6EE00032E4B /* SalamSeoul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalamSeoul.entitlements; sourceTree = "<group>"; };
+		368B6FEE29FFACD300032E4B /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		36F9E72529F2B9E700F478C4 /* SalamSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalamSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F9E72829F2B9E700F478C4 /* SalamSeoulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamSeoulApp.swift; sourceTree = "<group>"; };
+		36F9E72A29F2B9E700F478C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		36F9E72C29F2B9E800F478C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36F9E72F29F2B9E800F478C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36F9E76E29F8868600F478C4 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		36F9E77029F8883600F478C4 /* FirebaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApiClient.swift; sourceTree = "<group>"; };
+		36F9E77529F88C1E00F478C4 /* RestaurantDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailFeature.swift; sourceTree = "<group>"; };
+		36F9E77729F88C2D00F478C4 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		36F9E77A29F890A100F478C4 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		36F9E77C29F890C100F478C4 /* RestaurantMainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMainFeature.swift; sourceTree = "<group>"; };
+		36F9E77E29F890DC00F478C4 /* RestaurantMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMainView.swift; sourceTree = "<group>"; };
+		36F9E78229F89A2400F478C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36F9E7CF29FAAD6900F478C4 /* HaramDeterctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaramDeterctorView.swift; sourceTree = "<group>"; };
+		36F9E7D129FAAD8900F478C4 /* DataScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerVC.swift; sourceTree = "<group>"; };
+		36F9E7D329FAADB800F478C4 /* TextScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScannerView.swift; sourceTree = "<group>"; };
+		36F9E7D529FAF25800F478C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36F9E72229F2B9E700F478C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F9E74529F2BC1600F478C4 /* FirebaseDatabaseSwift in Frameworks */,
+				36F9E74329F2BC1600F478C4 /* FirebaseDatabase in Frameworks */,
+				36F9E73F29F2BC1600F478C4 /* FirebaseAnalyticsSwift in Frameworks */,
+				368B6FED29FFA5A000032E4B /* GoogleMobileAds in Frameworks */,
+				36F9E73D29F2BC1600F478C4 /* FirebaseAnalytics in Frameworks */,
+				36F9E73829F2BA0A00F478C4 /* ComposableArchitecture in Frameworks */,
+				36F9E74129F2BC1600F478C4 /* FirebaseAuth in Frameworks */,
+				36F9E74729F2BC1600F478C4 /* FirebaseFirestore in Frameworks */,
+				36F9E74929F2BC1600F478C4 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3632185129FCA3C00002E672 /* PrayerTimingFeature */ = {
+			isa = PBXGroup;
+			children = (
+				3632185429FCA40B0002E672 /* Calendar.swift */,
+				3632185629FCA41D0002E672 /* CalendarClient.swift */,
+				3632185829FCA42C0002E672 /* PrayerTimingFeature.swift */,
+				3632185A29FCA4600002E672 /* PrayerTimingView.swift */,
+				364EC78D2A018A3500033C32 /* PrayerTimingCellView.swift */,
+			);
+			path = PrayerTimingFeature;
+			sourceTree = "<group>";
+		};
+		3632185E29FCABFC0002E672 /* ProfileFeature */ = {
+			isa = PBXGroup;
+			children = (
+				3632186229FCBF6F0002E672 /* User.swift */,
+				3632186029FCB7A70002E672 /* ProfileView.swift */,
+				3632186429FCC1940002E672 /* RegistrationView.swift */,
+				3632186829FCCC560002E672 /* RegistrationFeature.swift */,
+				3632186A29FCCD030002E672 /* FirebaseAuthClient.swift */,
+				360A25172A05BBCE00852676 /* SalamKoreaProView.swift */,
+				360A251F2A0668F800852676 /* SelectingLanguageView.swift */,
+			);
+			path = ProfileFeature;
+			sourceTree = "<group>";
+		};
+		36F9E71C29F2B9E700F478C4 = {
+			isa = PBXGroup;
+			children = (
+				360A251D2A0654EB00852676 /* Localizable.strings */,
+				36F9E72729F2B9E700F478C4 /* SalamSeoul */,
+				36F9E72629F2B9E700F478C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36F9E72629F2B9E700F478C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E72529F2B9E700F478C4 /* SalamSeoul.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36F9E72729F2B9E700F478C4 /* SalamSeoul */ = {
+			isa = PBXGroup;
+			children = (
+				368B6FEA29FEB6EE00032E4B /* SalamSeoul.entitlements */,
+				36F9E7D529FAF25800F478C4 /* Info.plist */,
+				36F9E78429F89C6700F478C4 /* Production */,
+				36F9E76B29F8855200F478C4 /* FirebaseApiClient */,
+				36F9E76D29F885AA00F478C4 /* RestaurantMainFeature */,
+				36F9E7CE29FAAD4300F478C4 /* HaramDetectorFeature */,
+				3632185129FCA3C00002E672 /* PrayerTimingFeature */,
+				3632185E29FCABFC0002E672 /* ProfileFeature */,
+				36F9E72C29F2B9E800F478C4 /* Assets.xcassets */,
+				36F9E72E29F2B9E800F478C4 /* Preview Content */,
+			);
+			path = SalamSeoul;
+			sourceTree = "<group>";
+		};
+		36F9E72E29F2B9E800F478C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E72F29F2B9E800F478C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		36F9E76B29F8855200F478C4 /* FirebaseApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E78229F89A2400F478C4 /* GoogleService-Info.plist */,
+				36F9E76E29F8868600F478C4 /* Restaurant.swift */,
+				36F9E77029F8883600F478C4 /* FirebaseApiClient.swift */,
+			);
+			path = FirebaseApiClient;
+			sourceTree = "<group>";
+		};
+		36F9E76C29F8857D00F478C4 /* RestaurantDetailFeature */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E77529F88C1E00F478C4 /* RestaurantDetailFeature.swift */,
+				36F9E77729F88C2D00F478C4 /* RestaurantDetailView.swift */,
+			);
+			path = RestaurantDetailFeature;
+			sourceTree = "<group>";
+		};
+		36F9E76D29F885AA00F478C4 /* RestaurantMainFeature */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E77A29F890A100F478C4 /* RestaurantCell.swift */,
+				36F9E77C29F890C100F478C4 /* RestaurantMainFeature.swift */,
+				36F9E77E29F890DC00F478C4 /* RestaurantMainView.swift */,
+				36F9E76C29F8857D00F478C4 /* RestaurantDetailFeature */,
+			);
+			path = RestaurantMainFeature;
+			sourceTree = "<group>";
+		};
+		36F9E78429F89C6700F478C4 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E72829F2B9E700F478C4 /* SalamSeoulApp.swift */,
+				36F9E72A29F2B9E700F478C4 /* ContentView.swift */,
+				368B6FEE29FFACD300032E4B /* BannerAd.swift */,
+				364EC78F2A01C02400033C32 /* CustomTabBar.swift */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		36F9E7CE29FAAD4300F478C4 /* HaramDetectorFeature */ = {
+			isa = PBXGroup;
+			children = (
+				36F9E7D129FAAD8900F478C4 /* DataScannerVC.swift */,
+				36F9E7D329FAADB800F478C4 /* TextScannerView.swift */,
+				36F9E7CF29FAAD6900F478C4 /* HaramDeterctorView.swift */,
+			);
+			path = HaramDetectorFeature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36F9E72429F2B9E700F478C4 /* SalamSeoul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F9E73329F2B9E800F478C4 /* Build configuration list for PBXNativeTarget "SalamSeoul" */;
+			buildPhases = (
+				36F9E72129F2B9E700F478C4 /* Sources */,
+				36F9E72229F2B9E700F478C4 /* Frameworks */,
+				36F9E72329F2B9E700F478C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalamSeoul;
+			packageProductDependencies = (
+				36F9E73729F2BA0A00F478C4 /* ComposableArchitecture */,
+				36F9E73C29F2BC1600F478C4 /* FirebaseAnalytics */,
+				36F9E73E29F2BC1600F478C4 /* FirebaseAnalyticsSwift */,
+				36F9E74029F2BC1600F478C4 /* FirebaseAuth */,
+				36F9E74229F2BC1600F478C4 /* FirebaseDatabase */,
+				36F9E74429F2BC1600F478C4 /* FirebaseDatabaseSwift */,
+				36F9E74629F2BC1600F478C4 /* FirebaseFirestore */,
+				36F9E74829F2BC1600F478C4 /* FirebaseFirestoreSwift */,
+				368B6FEC29FFA5A000032E4B /* GoogleMobileAds */,
+			);
+			productName = SalamSeoul;
+			productReference = 36F9E72529F2B9E700F478C4 /* SalamSeoul.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36F9E71D29F2B9E700F478C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					36F9E72429F2B9E700F478C4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 36F9E72029F2B9E700F478C4 /* Build configuration list for PBXProject "SalamSeoul" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 36F9E71C29F2B9E700F478C4;
+			packageReferences = (
+				36F9E73629F2BA0A00F478C4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				368B6FEB29FFA5A000032E4B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = 36F9E72629F2B9E700F478C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36F9E72429F2B9E700F478C4 /* SalamSeoul */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36F9E72329F2B9E700F478C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F9E73029F2B9E800F478C4 /* Preview Assets.xcassets in Resources */,
+				360A251B2A0654EB00852676 /* Localizable.strings in Resources */,
+				36F9E72D29F2B9E800F478C4 /* Assets.xcassets in Resources */,
+				36F9E78329F89A2400F478C4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36F9E72129F2B9E700F478C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F9E77B29F890A100F478C4 /* RestaurantCell.swift in Sources */,
+				3632185929FCA42C0002E672 /* PrayerTimingFeature.swift in Sources */,
+				36F9E77D29F890C100F478C4 /* RestaurantMainFeature.swift in Sources */,
+				364EC78E2A018A3500033C32 /* PrayerTimingCellView.swift in Sources */,
+				36F9E72B29F2B9E700F478C4 /* ContentView.swift in Sources */,
+				36F9E7D429FAADB800F478C4 /* TextScannerView.swift in Sources */,
+				36F9E7D229FAAD8900F478C4 /* DataScannerVC.swift in Sources */,
+				3632186B29FCCD030002E672 /* FirebaseAuthClient.swift in Sources */,
+				36F9E76F29F8868600F478C4 /* Restaurant.swift in Sources */,
+				3632185B29FCA4600002E672 /* PrayerTimingView.swift in Sources */,
+				36F9E77629F88C1E00F478C4 /* RestaurantDetailFeature.swift in Sources */,
+				3632186129FCB7A70002E672 /* ProfileView.swift in Sources */,
+				3632186929FCCC560002E672 /* RegistrationFeature.swift in Sources */,
+				3632185729FCA41D0002E672 /* CalendarClient.swift in Sources */,
+				36F9E7D029FAAD6900F478C4 /* HaramDeterctorView.swift in Sources */,
+				36F9E77129F8883600F478C4 /* FirebaseApiClient.swift in Sources */,
+				36F9E72929F2B9E700F478C4 /* SalamSeoulApp.swift in Sources */,
+				360A25182A05BBCE00852676 /* SalamKoreaProView.swift in Sources */,
+				3632186329FCBF6F0002E672 /* User.swift in Sources */,
+				3632186529FCC1940002E672 /* RegistrationView.swift in Sources */,
+				368B6FEF29FFACD300032E4B /* BannerAd.swift in Sources */,
+				360A25202A0668F800852676 /* SelectingLanguageView.swift in Sources */,
+				36F9E77829F88C2D00F478C4 /* RestaurantDetailView.swift in Sources */,
+				364EC7902A01C02400033C32 /* CustomTabBar.swift in Sources */,
+				36F9E77F29F890DC00F478C4 /* RestaurantMainView.swift in Sources */,
+				3632185529FCA40B0002E672 /* Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		360A251D2A0654EB00852676 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360A251C2A0654EB00852676 /* en */,
+				360A251E2A0654ED00852676 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36F9E73129F2B9E800F478C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SeoulSalam;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36F9E73229F2B9E800F478C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SeoulSalam;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36F9E73429F2B9E800F478C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SalamSeoul/SalamSeoul.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SalamSeoul/Preview Content\"";
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalamSeoul/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.SalamSeoul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36F9E73529F2B9E800F478C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SalamSeoul/SalamSeoul.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SalamSeoul/Preview Content\"";
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SalamSeoul/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan barcode";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.SalamSeoul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36F9E72029F2B9E700F478C4 /* Build configuration list for PBXProject "SalamSeoul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F9E73129F2B9E800F478C4 /* Debug */,
+				36F9E73229F2B9E800F478C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F9E73329F2B9E800F478C4 /* Build configuration list for PBXNativeTarget "SalamSeoul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F9E73429F2B9E800F478C4 /* Debug */,
+				36F9E73529F2B9E800F478C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		368B6FEB29FFA5A000032E4B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		36F9E73629F2BA0A00F478C4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.0;
+			};
+		};
+		36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		368B6FEC29FFA5A000032E4B /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 368B6FEB29FFA5A000032E4B /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		36F9E73729F2BA0A00F478C4 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73629F2BA0A00F478C4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		36F9E73C29F2BC1600F478C4 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		36F9E73E29F2BC1600F478C4 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		36F9E74029F2BC1600F478C4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		36F9E74229F2BC1600F478C4 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		36F9E74429F2BC1600F478C4 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		36F9E74629F2BC1600F478C4 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		36F9E74829F2BC1600F478C4 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36F9E73B29F2BC1600F478C4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 36F9E71D29F2B9E700F478C4 /* Project object */;
+}

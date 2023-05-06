@@ -1,0 +1,81 @@
+/* 
+  Localizable.strings
+  SalamSeoul
+
+  Created by 추현호 on 2023/05/06.
+  
+*/
+
+"Search by name, category or adress" = "البحث بالاسم أو الفئة أو العنوان";
+"Contact" = "مكالمة هاتفية";
+"Website" = "موقع إلكتروني";
+"Address" = "عنوان";
+"The location information on the map may not be accurate.\nPlease search for the exact location or contact the restaurant" = "قد لا تكون معلومات الموقع على الخريطة دقيقة.
+الرجاء البحث عن الموقع الدقيق أو الاتصال بالمطعم";
+
+"Scan Korean Text Only" = "البحث في النص الكوري فقط";
+"This food product contains..." = "...يحتوي هذا المنتج الغذائي على";
+"Scan with Camera" = "مسح بالكاميرا";
+"Does not support Haram Detector from camera scan." = "المسح الضوئي بالكاميرا غير مدعوم";
+"This app only detects the ingredients listed on the food packaging and provides limited halal information. Therefore, please be advised that you are solely responsible for the purchase and consumption of food." = "يكتشف هذا التطبيق فقط المكونات المدرجة في عبوات الطعام ويوفر معلومات حلال محدودة. لذلك ، يرجى العلم بأنك وحدك المسؤول عن شراء واستهلاك الطعام.";
+"pork" = "لحم خنزير";
+"beef" = "لحم";
+"chicken" = "فرخة";
+"gelatin" = "الجيلاتين";
+"animal fat" = "الدهون الحيوانية";
+"from animal" = "من الحيوان";
+"lecithin" = "الليسيثين";
+"whey" = "مصل اللبن";
+"whey powder" = "مسحوق مصل اللبن";
+"synthetic fragrance" = "عطر اصطناعي";
+"lactose" = "اللاكتوز";
+"artificial butter flavor" = "نكهة الزبدة الصناعية";
+"butter" = "سمنة";
+"butter milk" = "حليب الزبدة";
+"casein" = "الكازين";
+"caseinates" = "كازينات";
+"cheese" = "جبنه";
+"cream" = "كريم";
+"ham" = "لحم خنزير";
+"wine" = "خمر";
+"alcohol" = "كحول";
+"L-Cysteine" = "سيستين-L";
+"bacon" = "لحم خنزير مقدد";
+"Fajr" = "الفجر";
+"Sunrise" = "شروق الشمس";
+"Dhuhr" = "الظهر";
+"Asr" = "العصر";
+"Maghrib" = "المغرب";
+"Isha" = "العشاء";
+"Times are based on Seoul" = "الأوقات تستند إلى سيول";
+"Sign In" = "تسجيل الدخول";
+"Sign in with Apple" = "تسجيل الدخول باستخدام أبل";
+"Sign in with Email" = "تسجيل الدخول باستخدام البريد الإلكتروني";
+"Welcome!" = "مرحباً!";
+"sign out" = "خروج";
+"Purchase / Cancel" = "شراء / إلغاء";
+">" = "<";
+"Settings" = "إعدادات";
+"Language" = "غة";
+"Help" = "يساعد";
+"Privacy" = "خصوصية";
+"Inquiry" = "سؤال";
+"Delete Account" = "حذف الحساب";
+"Warning" = "تحذير";
+"Are you sure you want to delete your account?" = "هل انت متأكد انك تريد حذف حسابك؟";
+"Yes" = "نعم";
+"No" = "لا";
+"Sign in" = "تسجيل الدخول";
+"Sign Up" = "اشتراك";
+"Enter Email" = "أدخل البريد الإلكتروني";
+"Enter Password" = "أدخل كلمة المرور";
+"Sign In" = "تسجيل الدخول";
+"Sign up" = "اشتراك";
+"Enter Username" = "ادخل اسم المستخدم";
+"Please fill out the form" = "يرجى ملء النموذج";
+"For Inquiries and Bug Report" = "للاستفسارات وتقرير الشوائب";
+"App System Language" = "لغة نظام التطبيق";
+"Do you really want to change the language setting?" = "هل تريد حقًا تغيير إعدادات اللغة؟";
+"Please Restart the App" = "يرجى إعادة تشغيل التطبيق";
+"OK" = "نعم";
+"none" = "غير موجود";
