@@ -69,6 +69,7 @@ public extension FirebaseApiClient {
                 listenerRegistration.remove()
             }
         }
+        .eraseToEffect()
     }
 }
 
