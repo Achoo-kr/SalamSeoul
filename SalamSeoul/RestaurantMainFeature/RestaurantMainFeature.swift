@@ -66,6 +66,7 @@ public let restaurantReducer = Reducer<RestaurantState, RestaurantAction, Restau
             .receive(on: environment.mainQueue)
             .catchToEffect()
             .map(RestaurantAction.updateRestaurants)
+            
     case let .updateRestaurants(.success(restaurants)):
         state.restaurants = restaurants
         return .none
