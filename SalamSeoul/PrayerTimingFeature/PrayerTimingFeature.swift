@@ -13,6 +13,12 @@ import ComposableArchitecture
 struct CalendarState: Equatable {
     var timing: PrayerTime? = nil
     var isLoading: Bool = false
+    var fajr: String = ""
+    var sunrise: String = ""
+    var dhuhr: String = ""
+    var asr: String = ""
+    var maghrib: String = ""
+    var isha: String = ""
 }
 
 // 도메인 + 액션
@@ -30,6 +36,7 @@ let calendarReducer = Reducer<CalendarState, CalendarAction, CalendarEnvironment
     state, action, environment in
     switch action {
     case .fetchItem(let yearAndMonth, let day):
+        enum FetchItem {}
         state.isLoading = true
         return environment.calendarClient
             .fetchCalendarItem(yearAndMonth, day)
@@ -37,11 +44,11 @@ let calendarReducer = Reducer<CalendarState, CalendarAction, CalendarEnvironment
     case .fetchItemResponse(.success(let timing)):
         state.timing = timing
         state.isLoading = false
-        return .none
+        return Effect.none
     case .fetchItemResponse(.failure):
         state.timing = nil
         state.isLoading = false
-        return .none
+        return Effect.none
         
     }
 }
