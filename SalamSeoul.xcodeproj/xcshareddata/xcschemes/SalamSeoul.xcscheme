@@ -28,6 +28,41 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36DF57232A0971A300B2F4D4"
+               BuildableName = "RestaurantMainFeatureTest.xctest"
+               BlueprintName = "RestaurantMainFeatureTest"
+               ReferencedContainer = "container:SalamSeoul.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36DF57302A0971B800B2F4D4"
+               BuildableName = "PrayerTimingFeatureTest.xctest"
+               BlueprintName = "PrayerTimingFeatureTest"
+               ReferencedContainer = "container:SalamSeoul.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36DF573D2A0971D300B2F4D4"
+               BuildableName = "RegistrationFeatureTest.xctest"
+               BlueprintName = "RegistrationFeatureTest"
+               ReferencedContainer = "container:SalamSeoul.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

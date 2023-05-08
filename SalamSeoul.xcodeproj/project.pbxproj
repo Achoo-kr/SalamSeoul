@@ -23,6 +23,9 @@
 		364EC7902A01C02400033C32 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC78F2A01C02400033C32 /* CustomTabBar.swift */; };
 		368B6FED29FFA5A000032E4B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 368B6FEC29FFA5A000032E4B /* GoogleMobileAds */; };
 		368B6FEF29FFACD300032E4B /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B6FEE29FFACD300032E4B /* BannerAd.swift */; };
+		36DF57272A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57262A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift */; };
+		36DF57342A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57332A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift */; };
+		36DF57412A0971D300B2F4D4 /* RegistrationFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57402A0971D300B2F4D4 /* RegistrationFeatureTest.swift */; };
 		36F9E72929F2B9E700F478C4 /* SalamSeoulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E72829F2B9E700F478C4 /* SalamSeoulApp.swift */; };
 		36F9E72B29F2B9E700F478C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E72A29F2B9E700F478C4 /* ContentView.swift */; };
 		36F9E72D29F2B9E800F478C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F9E72C29F2B9E800F478C4 /* Assets.xcassets */; };
@@ -48,6 +51,30 @@
 		36F9E7D429FAADB800F478C4 /* TextScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9E7D329FAADB800F478C4 /* TextScannerView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36DF57282A0971A300B2F4D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F9E71D29F2B9E700F478C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F9E72429F2B9E700F478C4;
+			remoteInfo = SalamSeoul;
+		};
+		36DF57352A0971B800B2F4D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F9E71D29F2B9E700F478C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F9E72429F2B9E700F478C4;
+			remoteInfo = SalamSeoul;
+		};
+		36DF57422A0971D300B2F4D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F9E71D29F2B9E700F478C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F9E72429F2B9E700F478C4;
+			remoteInfo = SalamSeoul;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		360A25172A05BBCE00852676 /* SalamKoreaProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamKoreaProView.swift; sourceTree = "<group>"; };
 		360A251C2A0654EB00852676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -66,6 +93,12 @@
 		364EC78F2A01C02400033C32 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		368B6FEA29FEB6EE00032E4B /* SalamSeoul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalamSeoul.entitlements; sourceTree = "<group>"; };
 		368B6FEE29FFACD300032E4B /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		36DF57242A0971A300B2F4D4 /* RestaurantMainFeatureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMainFeatureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DF57262A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMainFeatureTest.swift; sourceTree = "<group>"; };
+		36DF57312A0971B800B2F4D4 /* PrayerTimingFeatureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimingFeatureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DF57332A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimingFeatureTest.swift; sourceTree = "<group>"; };
+		36DF573E2A0971D300B2F4D4 /* RegistrationFeatureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistrationFeatureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DF57402A0971D300B2F4D4 /* RegistrationFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFeatureTest.swift; sourceTree = "<group>"; };
 		36F9E72529F2B9E700F478C4 /* SalamSeoul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalamSeoul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F9E72829F2B9E700F478C4 /* SalamSeoulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamSeoulApp.swift; sourceTree = "<group>"; };
 		36F9E72A29F2B9E700F478C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +119,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36DF57212A0971A300B2F4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF572E2A0971B800B2F4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF573B2A0971D300B2F4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36F9E72229F2B9E700F478C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,6 +162,7 @@
 		3632185129FCA3C00002E672 /* PrayerTimingFeature */ = {
 			isa = PBXGroup;
 			children = (
+				36DF57322A0971B800B2F4D4 /* PrayerTimingFeatureTest */,
 				3632185429FCA40B0002E672 /* Calendar.swift */,
 				3632185629FCA41D0002E672 /* CalendarClient.swift */,
 				3632185829FCA42C0002E672 /* PrayerTimingFeature.swift */,
@@ -120,6 +175,7 @@
 		3632185E29FCABFC0002E672 /* ProfileFeature */ = {
 			isa = PBXGroup;
 			children = (
+				36DF573F2A0971D300B2F4D4 /* RegistrationFeatureTest */,
 				3632186229FCBF6F0002E672 /* User.swift */,
 				3632186029FCB7A70002E672 /* ProfileView.swift */,
 				3632186429FCC1940002E672 /* RegistrationView.swift */,
@@ -129,6 +185,30 @@
 				360A251F2A0668F800852676 /* SelectingLanguageView.swift */,
 			);
 			path = ProfileFeature;
+			sourceTree = "<group>";
+		};
+		36DF57252A0971A300B2F4D4 /* RestaurantMainFeatureTest */ = {
+			isa = PBXGroup;
+			children = (
+				36DF57262A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift */,
+			);
+			path = RestaurantMainFeatureTest;
+			sourceTree = "<group>";
+		};
+		36DF57322A0971B800B2F4D4 /* PrayerTimingFeatureTest */ = {
+			isa = PBXGroup;
+			children = (
+				36DF57332A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift */,
+			);
+			path = PrayerTimingFeatureTest;
+			sourceTree = "<group>";
+		};
+		36DF573F2A0971D300B2F4D4 /* RegistrationFeatureTest */ = {
+			isa = PBXGroup;
+			children = (
+				36DF57402A0971D300B2F4D4 /* RegistrationFeatureTest.swift */,
+			);
+			path = RegistrationFeatureTest;
 			sourceTree = "<group>";
 		};
 		36F9E71C29F2B9E700F478C4 = {
@@ -144,6 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				36F9E72529F2B9E700F478C4 /* SalamSeoul.app */,
+				36DF57242A0971A300B2F4D4 /* RestaurantMainFeatureTest.xctest */,
+				36DF57312A0971B800B2F4D4 /* PrayerTimingFeatureTest.xctest */,
+				36DF573E2A0971D300B2F4D4 /* RegistrationFeatureTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +278,7 @@
 		36F9E76D29F885AA00F478C4 /* RestaurantMainFeature */ = {
 			isa = PBXGroup;
 			children = (
+				36DF57252A0971A300B2F4D4 /* RestaurantMainFeatureTest */,
 				36F9E77A29F890A100F478C4 /* RestaurantCell.swift */,
 				36F9E77C29F890C100F478C4 /* RestaurantMainFeature.swift */,
 				36F9E77E29F890DC00F478C4 /* RestaurantMainView.swift */,
@@ -227,6 +311,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		36DF57232A0971A300B2F4D4 /* RestaurantMainFeatureTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36DF572C2A0971A300B2F4D4 /* Build configuration list for PBXNativeTarget "RestaurantMainFeatureTest" */;
+			buildPhases = (
+				36DF57202A0971A300B2F4D4 /* Sources */,
+				36DF57212A0971A300B2F4D4 /* Frameworks */,
+				36DF57222A0971A300B2F4D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36DF57292A0971A300B2F4D4 /* PBXTargetDependency */,
+			);
+			name = RestaurantMainFeatureTest;
+			productName = RestaurantMainFeatureTest;
+			productReference = 36DF57242A0971A300B2F4D4 /* RestaurantMainFeatureTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36DF57302A0971B800B2F4D4 /* PrayerTimingFeatureTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36DF57372A0971B800B2F4D4 /* Build configuration list for PBXNativeTarget "PrayerTimingFeatureTest" */;
+			buildPhases = (
+				36DF572D2A0971B800B2F4D4 /* Sources */,
+				36DF572E2A0971B800B2F4D4 /* Frameworks */,
+				36DF572F2A0971B800B2F4D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36DF57362A0971B800B2F4D4 /* PBXTargetDependency */,
+			);
+			name = PrayerTimingFeatureTest;
+			productName = PrayerTimingFeatureTest;
+			productReference = 36DF57312A0971B800B2F4D4 /* PrayerTimingFeatureTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36DF573D2A0971D300B2F4D4 /* RegistrationFeatureTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36DF57442A0971D300B2F4D4 /* Build configuration list for PBXNativeTarget "RegistrationFeatureTest" */;
+			buildPhases = (
+				36DF573A2A0971D300B2F4D4 /* Sources */,
+				36DF573B2A0971D300B2F4D4 /* Frameworks */,
+				36DF573C2A0971D300B2F4D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36DF57432A0971D300B2F4D4 /* PBXTargetDependency */,
+			);
+			name = RegistrationFeatureTest;
+			productName = RegistrationFeatureTest;
+			productReference = 36DF573E2A0971D300B2F4D4 /* RegistrationFeatureTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		36F9E72429F2B9E700F478C4 /* SalamSeoul */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36F9E73329F2B9E800F478C4 /* Build configuration list for PBXNativeTarget "SalamSeoul" */;
@@ -265,6 +403,18 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					36DF57232A0971A300B2F4D4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 36F9E72429F2B9E700F478C4;
+					};
+					36DF57302A0971B800B2F4D4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 36F9E72429F2B9E700F478C4;
+					};
+					36DF573D2A0971D300B2F4D4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 36F9E72429F2B9E700F478C4;
+					};
 					36F9E72429F2B9E700F478C4 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -290,11 +440,35 @@
 			projectRoot = "";
 			targets = (
 				36F9E72429F2B9E700F478C4 /* SalamSeoul */,
+				36DF57232A0971A300B2F4D4 /* RestaurantMainFeatureTest */,
+				36DF57302A0971B800B2F4D4 /* PrayerTimingFeatureTest */,
+				36DF573D2A0971D300B2F4D4 /* RegistrationFeatureTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36DF57222A0971A300B2F4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF572F2A0971B800B2F4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF573C2A0971D300B2F4D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36F9E72329F2B9E700F478C4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +483,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36DF57202A0971A300B2F4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DF57272A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF572D2A0971B800B2F4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DF57342A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DF573A2A0971D300B2F4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36DF57412A0971D300B2F4D4 /* RegistrationFeatureTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36F9E72129F2B9E700F478C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +542,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		36DF57292A0971A300B2F4D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F9E72429F2B9E700F478C4 /* SalamSeoul */;
+			targetProxy = 36DF57282A0971A300B2F4D4 /* PBXContainerItemProxy */;
+		};
+		36DF57362A0971B800B2F4D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F9E72429F2B9E700F478C4 /* SalamSeoul */;
+			targetProxy = 36DF57352A0971B800B2F4D4 /* PBXContainerItemProxy */;
+		};
+		36DF57432A0971D300B2F4D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F9E72429F2B9E700F478C4 /* SalamSeoul */;
+			targetProxy = 36DF57422A0971D300B2F4D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		360A251D2A0654EB00852676 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -357,6 +573,138 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		36DF572A2A0971A300B2F4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.RestaurantMainFeatureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalamSeoul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalamSeoul";
+			};
+			name = Debug;
+		};
+		36DF572B2A0971A300B2F4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.RestaurantMainFeatureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalamSeoul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalamSeoul";
+			};
+			name = Release;
+		};
+		36DF57382A0971B800B2F4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.PrayerTimingFeatureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalamSeoul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalamSeoul";
+			};
+			name = Debug;
+		};
+		36DF57392A0971B800B2F4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.PrayerTimingFeatureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalamSeoul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalamSeoul";
+			};
+			name = Release;
+		};
+		36DF57452A0971D300B2F4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.RegistrationFeatureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalamSeoul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalamSeoul";
+			};
+			name = Debug;
+		};
+		36DF57462A0971D300B2F4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AU882HP6MX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IcyChoo.RegistrationFeatureTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalamSeoul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalamSeoul";
+			};
+			name = Release;
+		};
 		36F9E73129F2B9E800F478C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,6 +896,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		36DF572C2A0971A300B2F4D4 /* Build configuration list for PBXNativeTarget "RestaurantMainFeatureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DF572A2A0971A300B2F4D4 /* Debug */,
+				36DF572B2A0971A300B2F4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36DF57372A0971B800B2F4D4 /* Build configuration list for PBXNativeTarget "PrayerTimingFeatureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DF57382A0971B800B2F4D4 /* Debug */,
+				36DF57392A0971B800B2F4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36DF57442A0971D300B2F4D4 /* Build configuration list for PBXNativeTarget "RegistrationFeatureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36DF57452A0971D300B2F4D4 /* Debug */,
+				36DF57462A0971D300B2F4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		36F9E72029F2B9E700F478C4 /* Build configuration list for PBXProject "SalamSeoul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
