@@ -34,6 +34,8 @@ struct ProfileView: View {
                     }
                     VStack(alignment: .leading){
                         Spacer()
+                        BannerAd(unitID: "ca-app-pub-7454589661664486/9787009387")
+                            .frame(height: 50)
                         if !viewStore.state.isSignedIn {
                             VStack(alignment: .leading) {
                                 Text("Sign In")

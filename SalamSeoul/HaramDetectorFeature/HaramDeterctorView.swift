@@ -30,7 +30,7 @@ struct HaramDeterctorView: View {
                             .padding(.vertical)
                     }
                     
-                    BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
+                    BannerAd(unitID: "ca-app-pub-7454589661664486/9787009387")
                         .frame(height: 50)
                     
                     ScrollView {

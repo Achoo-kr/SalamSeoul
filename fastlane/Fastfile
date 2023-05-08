@@ -48,6 +48,13 @@ platform :ios do
       force: true
     )
   end
+
+  desc "To test app"
+  lane :test_app do
+    scan(
+      scheme: "SalamSeoul",
+    )
+  end
 end
 
 
