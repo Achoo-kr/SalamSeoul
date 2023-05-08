@@ -11,6 +11,9 @@ import ComposableArchitecture
 
 final class RestaurantMainFeatureTest: XCTestCase {
     //https://www.pointfree.co/episodes/ep195-async-composable-architecture-the-problem
+    
+    //비동기적으로 코드 수정 요망
+    
 //    func testObserveSuccess() {
 //        let store = TestStore(
 //            initialState: RestaurantState(),
