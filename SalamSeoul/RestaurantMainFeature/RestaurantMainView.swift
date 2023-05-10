@@ -34,11 +34,11 @@ struct RestaurantMainView: View {
                         .edgesIgnoringSafeArea(.all)
                     
                     ScrollView(showsIndicators: false){
-                        if selectedLanguage == "English" {
-                            Image("Seoul Salam")
+                        if selectedLanguage == "Arabic" {
+                            Image("Seoul Salam Arabic")
                                 .padding(.vertical)
                         } else {
-                            Image("Seoul Salam Arabic")
+                            Image("Seoul Salam")
                                 .padding(.vertical)
                         }
                         NavigationLink {
@@ -98,12 +98,12 @@ struct RestaurantMainView: View {
                                 }
                             }
                         } label: {
-                            if selectedLanguage == "English" {
-                                Image("Halal Certified")
+                            if selectedLanguage == "Arabic" {
+                                Image("Halal Certified Arabic")
                                     .shadow(radius: 10)
                                     .padding(.top)
                             } else {
-                                Image("Halal Certified Arabic")
+                                Image("Halal Certified")
                                     .shadow(radius: 10)
                                     .padding(.top)
                             }
@@ -167,12 +167,12 @@ struct RestaurantMainView: View {
                                 }
                             }
                         } label: {
-                            if selectedLanguage == "English" {
-                                Image("Self Certified")
+                            if selectedLanguage == "Arabic" {
+                                Image("Self Certified Arabic")
                                     .shadow(radius: 10)
                                     .padding(.top)
                             } else {
-                                Image("Self Certified Arabic")
+                                Image("Self Certified")
                                     .shadow(radius: 10)
                                     .padding(.top)
                             }
@@ -235,12 +235,12 @@ struct RestaurantMainView: View {
                                 }
                             }
                         } label: {
-                            if selectedLanguage == "English" {
-                                Image("Muslim Friendly")
+                            if selectedLanguage == "Arabic" {
+                                Image("Muslim Friendly Arabic")
                                     .shadow(radius: 10)
                                     .padding(.top)
                             } else {
-                                Image("Muslim Friendly Arabic")
+                                Image("Muslim Friendly")
                                     .shadow(radius: 10)
                                     .padding(.top)
                             }

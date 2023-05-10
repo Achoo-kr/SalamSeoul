@@ -54,11 +54,11 @@ struct PrayerTimingView: View {
                     .edgesIgnoringSafeArea(.all)
                 VStack{
                     
-                    if selectedLanguage == "English" {
-                        Image("Prayer Time")
+                    if selectedLanguage == "Arabic" {
+                        Image("Prayer Time Arabic")
                             .padding(.vertical)
                     } else {
-                        Image("Prayer Time Arabic")
+                        Image("Prayer Time")
                             .padding(.vertical)
                     }
                     

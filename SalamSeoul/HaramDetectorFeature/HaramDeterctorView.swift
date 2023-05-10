@@ -22,11 +22,11 @@ struct HaramDeterctorView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all )
                 VStack {
-                    if selectedLanguage == "English" {
-                        Image("Haram Detector")
+                    if selectedLanguage == "Arabic" {
+                        Image("Haram Detector Arabic")
                             .padding(.vertical)
                     } else {
-                        Image("Haram Detector Arabic")
+                        Image("Haram Detector")
                             .padding(.vertical)
                     }
                     

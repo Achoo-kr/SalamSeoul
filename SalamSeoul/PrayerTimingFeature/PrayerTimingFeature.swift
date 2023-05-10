@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import ComposableArchitecture
 
-// 도메인 + 상태
+// State
 struct CalendarState: Equatable {
     var timing: PrayerTime? = nil
     var isLoading: Bool = false
@@ -21,17 +21,18 @@ struct CalendarState: Equatable {
     var isha: String = ""
 }
 
-// 도메인 + 액션
+// Action
 enum CalendarAction: Equatable {
     case fetchItem(_ yearAndMonth: String, _ day: Int)
     case fetchItemResponse(Result<PrayerTime, CalendarClient.Failure>)
 }
-
+// Environment
 struct CalendarEnvironment {
     var calendarClient: CalendarClient
     var mainQueue: AnySchedulerOf<DispatchQueue>
 }
 
+// Reducer
 let calendarReducer = Reducer<CalendarState, CalendarAction, CalendarEnvironment> {
     state, action, environment in
     switch action {

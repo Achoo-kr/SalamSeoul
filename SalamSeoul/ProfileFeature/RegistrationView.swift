@@ -177,7 +177,7 @@ struct EmailSigninView: View {
             .frame(height: 50, alignment: .center)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.black, lineWidth: 1)
+                    .strokeBorder(Color.black, lineWidth: 1)
             )
             .padding([.leading, .trailing], 16)
             .cornerRadius(10)
@@ -258,7 +258,7 @@ struct EmailSignUpView: View {
             .frame(height: 50, alignment: .center)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.black, lineWidth: 1)
+                    .strokeBorder(Color.black, lineWidth: 1)
             )
             .padding([.leading, .trailing], 16)
             .cornerRadius(10)
@@ -307,7 +307,7 @@ struct CustomTextField: View {
             .frame(height: 50, alignment: .center)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.black, lineWidth: 1.5)
+                    .strokeBorder(Color.black, lineWidth: 1.5)
             )
             .padding([.leading, .trailing], 16)
             .cornerRadius(10)
