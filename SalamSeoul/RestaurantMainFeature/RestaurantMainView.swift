@@ -23,7 +23,7 @@ struct RestaurantMainView: View {
     private var isSearch = false
     
     @AppStorage("selectedLanguage") var selectedLanguage: String?
-
+    
     
     var body: some View {
         WithViewStore(self.store) { viewStore in
@@ -48,53 +48,9 @@ struct RestaurantMainView: View {
                                     .edgesIgnoringSafeArea(.all)
                                 VStack{
                                     Section {
-                                        HStack {
-                                            Image(systemName: "magnifyingglass")
-                                                .foregroundColor(.gray)
-                                                .padding()
-                                            TextField("Search by name, category or adress",
-                                                      text: viewStore.binding(
-                                                        get: \.searchText,
-                                                        send: RestaurantAction.changeSearchText
-                                                      ))
-                                        }
-                                        .overlay(
-                                            HStack {
-                                                Spacer()
-                                                if viewStore.state.isSearching {
-                                                    Image(systemName: "xmark.circle.fill")
-                                                        .padding()
-                                                        .foregroundColor(.gray)
-                                                        .onTapGesture {
-                                                            ViewStore(store).send(RestaurantAction.resetSearchText)
-                                                        }
-                                                }
-                                            }
-                                        )
+                                        SearchField(viewStore: viewStore)
                                     }
-                                    ScrollView {
-                                        LazyVStack(alignment: .leading) {
-                                            Section {
-                                                LazyVStack(alignment: .leading){
-                                                    ForEach(viewStore.state.filteredRestaurants, id: \.self) { restaurant in
-                                                        if restaurant.certifiedState == "Halal Certified" {
-                                                            NavigationLink(
-                                                                destination: RestaurantDetailView(store: .init(
-                                                                    initialState: .init(restaurant: restaurant),
-                                                                    reducer: restaurantDetailReducer,
-                                                                    environment: .init(client: .live, mainQueue: .main.eraseToAnyScheduler())
-                                                                )
-                                                                ),
-                                                                label: {
-                                                                    RestaurantCell(restaurant: restaurant)
-                                                                }
-                                                            )
-                                                        }
-                                                    }
-                                                }.padding(.bottom, 80)
-                                            }
-                                        }.animation(.easeIn)
-                                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    RestaurantList(viewStore: viewStore, certifiedState: "Halal Certified")
                                 }
                             }
                         } label: {
@@ -116,54 +72,9 @@ struct RestaurantMainView: View {
                                     .edgesIgnoringSafeArea(.all)
                                 VStack{
                                     Section {
-                                        HStack {
-                                            Image(systemName: "magnifyingglass")
-                                                .foregroundColor(.gray)
-                                                .padding()
-                                            TextField("Search by name, category or adress",
-                                                      text: viewStore.binding(
-                                                        get: \.searchText,
-                                                        send: RestaurantAction.changeSearchText
-                                                      ))
-                                        }
-                                        .overlay(
-                                            HStack {
-                                                Spacer()
-                                                if viewStore.state.isSearching {
-                                                    Image(systemName: "xmark.circle.fill")
-                                                        .padding()
-                                                        .foregroundColor(.gray)
-                                                        .onTapGesture {
-                                                            ViewStore(store).send(RestaurantAction.resetSearchText)
-                                                        }
-                                                }
-                                            }
-                                        )
+                                        SearchField(viewStore: viewStore)
                                     }
-                                    ScrollView {
-                                        LazyVStack(alignment: .leading) {
-                                            Section {
-                                                LazyVStack(alignment: .leading){
-                                                    ForEach(viewStore.state.filteredRestaurants, id: \.self) { restaurant in
-                                                        if restaurant.certifiedState == "Self Certified" {
-                                                            NavigationLink(
-                                                                destination: RestaurantDetailView(store: .init(
-                                                                    initialState: .init(restaurant: restaurant),
-                                                                    reducer: restaurantDetailReducer,
-                                                                    environment: .init(client: .live, mainQueue: .main.eraseToAnyScheduler())
-                                                                )
-                                                                ),
-                                                                label: {
-                                                                    RestaurantCell(restaurant: restaurant)
-                                                                }
-                                                            )
-                                                        }
-                                                    }
-                                                }
-                                                .padding(.bottom, 80)
-                                            }
-                                        }.animation(.easeIn)
-                                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    RestaurantList(viewStore: viewStore, certifiedState: "Self Certified")
                                 }
                             }
                         } label: {
@@ -185,53 +96,9 @@ struct RestaurantMainView: View {
                                     .edgesIgnoringSafeArea(.all)
                                 VStack{
                                     Section {
-                                        HStack {
-                                            Image(systemName: "magnifyingglass")
-                                                .foregroundColor(.gray)
-                                                .padding()
-                                            TextField("Search by name, category or adress",
-                                                      text: viewStore.binding(
-                                                        get: \.searchText,
-                                                        send: RestaurantAction.changeSearchText
-                                                      ))
-                                        }
-                                        .overlay(
-                                            HStack {
-                                                Spacer()
-                                                if viewStore.state.isSearching {
-                                                    Image(systemName: "xmark.circle.fill")
-                                                        .padding()
-                                                        .foregroundColor(.gray)
-                                                        .onTapGesture {
-                                                            ViewStore(store).send(RestaurantAction.resetSearchText)
-                                                        }
-                                                }
-                                            }
-                                        )
+                                        SearchField(viewStore: viewStore)
                                     }
-                                    ScrollView {
-                                        LazyVStack(alignment: .leading) {
-                                            Section {
-                                                LazyVStack(alignment: .leading){
-                                                    ForEach(viewStore.state.filteredRestaurants, id: \.self) { restaurant in
-                                                        if restaurant.certifiedState == "Muslim Friendly" {
-                                                            NavigationLink(
-                                                                destination: RestaurantDetailView(store: .init(
-                                                                    initialState: .init(restaurant: restaurant),
-                                                                    reducer: restaurantDetailReducer,
-                                                                    environment: .init(client: .live, mainQueue: .main.eraseToAnyScheduler())
-                                                                )
-                                                                ),
-                                                                label: {
-                                                                    RestaurantCell(restaurant: restaurant)
-                                                                }
-                                                            )
-                                                        }
-                                                    }
-                                                }.padding(.bottom, 80)
-                                            }
-                                        }.animation(.easeIn)
-                                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                                    RestaurantList(viewStore: viewStore, certifiedState: "Muslim Friendly")
                                 }
                             }
                         } label: {
@@ -248,7 +115,7 @@ struct RestaurantMainView: View {
                         
                         Spacer()
                     }.accentColor(.black)
-                    .padding(.bottom, 70)
+                        .padding(.bottom, 70)
                 }
                 
             }
@@ -269,3 +136,69 @@ struct RestaurantMainView_Previews: PreviewProvider {
         )
     }
 }
+
+
+
+// 검색 필드 컴포넌트
+struct SearchField: View {
+    @ObservedObject var viewStore: ViewStore<RestaurantState, RestaurantAction>
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+                .padding()
+            TextField("Search by name, category or adress",
+                      text: viewStore.binding(
+                        get: \.searchText,
+                        send: RestaurantAction.changeSearchText
+                      ))
+        }
+        .overlay(
+            HStack {
+                Spacer()
+                if viewStore.state.isSearching {
+                    Image(systemName: "xmark.circle.fill")
+                        .padding()
+                        .foregroundColor(.gray)
+                        .onTapGesture {
+                            viewStore.send(RestaurantAction.resetSearchText)
+                        }
+                }
+            }
+        )
+    }
+}
+
+// 레스토랑 목록 컴포넌트
+struct RestaurantList: View {
+    @ObservedObject var viewStore: ViewStore<RestaurantState, RestaurantAction>
+    let certifiedState: String
+    
+    var body: some View {
+        ScrollView {
+            LazyVStack(alignment: .leading) {
+                Section {
+                    LazyVStack(alignment: .leading){
+                        ForEach(viewStore.state.filteredRestaurants, id: \.self) { restaurant in
+                            if restaurant.certifiedState == self.certifiedState {
+                                NavigationLink(
+                                    destination: RestaurantDetailView(store: .init(
+                                        initialState: .init(restaurant: restaurant),
+                                        reducer: restaurantDetailReducer,
+                                        environment: .init(client: .live, mainQueue: .main.eraseToAnyScheduler())
+                                    )
+                                    ),
+                                    label: {
+                                        RestaurantCell(restaurant: restaurant)
+                                    }
+                                )
+                            }
+                        }
+                    }.padding(.bottom, 80)
+                }
+            }.animation(.easeIn)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+}
+
