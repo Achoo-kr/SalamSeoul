@@ -197,7 +197,7 @@ struct RestaurantList: View {
                         }
                     }.padding(.bottom, 80)
                 }
-            }.animation(.easeIn)
+            }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
