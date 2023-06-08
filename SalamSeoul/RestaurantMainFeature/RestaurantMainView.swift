@@ -14,12 +14,12 @@ import FirebaseAuth
 //    .frame(height: 30)
 
 struct RestaurantMainView: View {
-    public init(store: Store<RestaurantState, RestaurantAction>) {
+    init(store: StoreOf<RestaurantFeature>) {
         self.store = store
         ViewStore(store).send(.startObserve)
     }
     
-    private let store: Store<RestaurantState, RestaurantAction>
+    private let store: StoreOf<RestaurantFeature>
     private var isSearch = false
     
     @AppStorage("selectedLanguage") var selectedLanguage: String?
@@ -127,11 +127,11 @@ struct RestaurantMainView_Previews: PreviewProvider {
     static var previews: some View {
         RestaurantMainView(
             store: .init(
-                initialState: RestaurantState(),
-                reducer: restaurantReducer,
-                environment: .init(
-                    client: .mock,
-                    mainQueue: .main.eraseToAnyScheduler())
+                initialState: RestaurantFeature.State(),
+                reducer: Reducer(
+                    RestaurantFeature()
+                ).debug(),
+                environment: ()
             )
         )
     }
@@ -141,7 +141,7 @@ struct RestaurantMainView_Previews: PreviewProvider {
 
 // 검색 필드 컴포넌트
 struct SearchField: View {
-    @ObservedObject var viewStore: ViewStore<RestaurantState, RestaurantAction>
+    @ObservedObject var viewStore: ViewStoreOf<RestaurantFeature>
     
     var body: some View {
         HStack {
@@ -151,7 +151,7 @@ struct SearchField: View {
             TextField("Search by name, category or adress",
                       text: viewStore.binding(
                         get: \.searchText,
-                        send: RestaurantAction.changeSearchText
+                        send: {.changeSearchText($0)}
                       ))
         }
         .overlay(
@@ -162,7 +162,7 @@ struct SearchField: View {
                         .padding()
                         .foregroundColor(.gray)
                         .onTapGesture {
-                            viewStore.send(RestaurantAction.resetSearchText)
+                            viewStore.send(.resetSearchText)
                         }
                 }
             }
@@ -172,31 +172,29 @@ struct SearchField: View {
 
 // 레스토랑 목록 컴포넌트
 struct RestaurantList: View {
-    @ObservedObject var viewStore: ViewStore<RestaurantState, RestaurantAction>
+    @ObservedObject var viewStore: ViewStoreOf<RestaurantFeature>
     let certifiedState: String
     
     var body: some View {
         ScrollView {
-            LazyVStack(alignment: .leading) {
-                Section {
-                    LazyVStack(alignment: .leading){
-                        ForEach(viewStore.state.filteredRestaurants, id: \.self) { restaurant in
-                            if restaurant.certifiedState == self.certifiedState {
-                                NavigationLink(
-                                    destination: RestaurantDetailView(store: .init(
-                                        initialState: .init(restaurant: restaurant),
-                                        reducer: restaurantDetailReducer,
-                                        environment: .init(client: .live, mainQueue: .main.eraseToAnyScheduler())
-                                    )
-                                    ),
-                                    label: {
-                                        RestaurantCell(restaurant: restaurant)
-                                    }
+            Section {
+                LazyVStack(alignment: .leading){
+                    ForEach(viewStore.state.filteredRestaurants, id: \.self) { restaurant in
+                        if restaurant.certifiedState == self.certifiedState {
+                            NavigationLink(
+                                destination: RestaurantDetailView(store: .init(
+                                    initialState: .init(restaurant: restaurant),
+                                    reducer: restaurantDetailReducer,
+                                    environment: .init(client: .live, mainQueue: .main.eraseToAnyScheduler())
                                 )
-                            }
+                                ),
+                                label: {
+                                    RestaurantCell(restaurant: restaurant)
+                                }
+                            )
                         }
-                    }.padding(.bottom, 80)
-                }
+                    }
+                }.padding(.bottom, 80)
             }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }

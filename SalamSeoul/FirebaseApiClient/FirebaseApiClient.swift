@@ -10,25 +10,36 @@ import ComposableArchitecture
 import Firebase
 import FirebaseFirestoreSwift
 
-public struct FirebaseApiClient {
+struct FirebaseApiClient {
     private static let restaurants = "Restaurants"
-    public var updateSnapshot: () -> Effect<[Restaurant], ApiFailure>
+    var updateSnapshot: @Sendable () -> Effect<[Restaurant], ApiFailure>
     
-    public struct ApiFailure: Error, Equatable {
-        public let message: String
+    struct ApiFailure: Error, Equatable {
+        let message: String
         
-        public init(message: String) {
+        init(message: String) {
             self.message = message
         }
     }
     
-    public init(updateSnapshot: @escaping () -> Effect<[Restaurant], ApiFailure>) {
+    init(updateSnapshot: @Sendable @escaping () -> Effect<[Restaurant], ApiFailure>) {
         self.updateSnapshot = updateSnapshot
     }
 }
 
+private enum FirebaseApiClientKey: DependencyKey {
+  static let liveValue = FirebaseApiClient.live
+}
+
+extension DependencyValues {
+  var firebaseApi: FirebaseApiClient {
+    get { self[FirebaseApiClientKey.self] }
+    set { self[FirebaseApiClientKey.self] = newValue }
+  }
+}
+
 //live를 이용한 코드 - live : naming convention으로 해당 모델이나 서비스를 실행하는데 필요한 모든 환경이 구성되어 있어서 라이브로 사용할 수 있다는 뜻
-public extension FirebaseApiClient {
+extension FirebaseApiClient {
     static let live = Self {
         .run { subscriber in
             let listenerRegistration = Firestore.firestore().collection(Self.restaurants).addSnapshotListener { snapshot, error in
@@ -72,7 +83,7 @@ public extension FirebaseApiClient {
     }
 }
 
-public extension FirebaseApiClient {
+extension FirebaseApiClient {
     static let mock = FirebaseApiClient {
         .run { subscriber in
             subscriber.send([
