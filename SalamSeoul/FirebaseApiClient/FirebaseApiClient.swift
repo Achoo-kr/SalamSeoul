@@ -12,7 +12,7 @@ import FirebaseFirestoreSwift
 
 struct FirebaseApiClient {
     private static let restaurants = "Restaurants"
-    var updateSnapshot: @Sendable () -> Effect<[Restaurant], ApiFailure>
+    var updateSnapshot: @Sendable () -> EffectPublisher<[Restaurant], ApiFailure>
     
     struct ApiFailure: Error, Equatable {
         let message: String
@@ -22,7 +22,7 @@ struct FirebaseApiClient {
         }
     }
     
-    init(updateSnapshot: @Sendable @escaping () -> Effect<[Restaurant], ApiFailure>) {
+    init(updateSnapshot: @Sendable @escaping () -> EffectPublisher<[Restaurant], ApiFailure>) {
         self.updateSnapshot = updateSnapshot
     }
 }
