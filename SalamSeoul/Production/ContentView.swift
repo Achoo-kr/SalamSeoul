@@ -24,11 +24,11 @@ struct ContentView: View {
                 TabView(selection: $selectedTab) {
                     RestaurantMainView(
                         store: .init(
-                            initialState: RestaurantState(),
-                            reducer: restaurantReducer,
-                            environment: .init(
-                                client: .live,
-                                mainQueue: .main.eraseToAnyScheduler())
+                            initialState: RestaurantFeature.State(),
+                            reducer: Reducer(
+                                RestaurantFeature()
+                            ).debug(),
+                            environment: ()
                         )
                     )
                     .tag(0)

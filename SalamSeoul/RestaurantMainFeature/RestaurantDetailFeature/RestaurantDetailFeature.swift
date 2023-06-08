@@ -10,7 +10,7 @@ import ComposableArchitecture
 import SwiftUI
 
 //MARK: - State
-public struct RestaurantDetailState: Equatable {
+struct RestaurantDetailState: Equatable {
     public var restaurant: Restaurant
 
     public init(restaurant: Restaurant) {
@@ -19,23 +19,23 @@ public struct RestaurantDetailState: Equatable {
 }
 
 //MARK: - Action
-public enum RestaurantDetailAction: Equatable {
+enum RestaurantDetailAction: Equatable {
     case bookmarkButtonTapped
 }
 
 //MARK: - Environment
-public struct RestaurantDetailEnvironment {
+struct RestaurantDetailEnvironment {
     var client: FirebaseApiClient
     var mainQueue: AnySchedulerOf<DispatchQueue>
 
-    public init(client: FirebaseApiClient, mainQueue: AnySchedulerOf<DispatchQueue>) {
+    init(client: FirebaseApiClient, mainQueue: AnySchedulerOf<DispatchQueue>) {
         self.client = client
         self.mainQueue = mainQueue
     }
 }
 
 //MARK: - Reducer
-public let restaurantDetailReducer = Reducer<RestaurantDetailState, RestaurantDetailAction, RestaurantDetailEnvironment> { state, action, environment in
+let restaurantDetailReducer = Reducer<RestaurantDetailState, RestaurantDetailAction, RestaurantDetailEnvironment> { state, action, environment in
     switch action {
     case .bookmarkButtonTapped:
         // 찜하기 기능 나중에 추가 예정
