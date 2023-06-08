@@ -40,7 +40,7 @@ struct RestaurantFeature: ReducerProtocol {
     @Dependency(\.firebaseApi) var firebaseApi
     @Dependency(\.mainQueue) var mainQueue
     
-    func reduce(into state: inout State, action: Action) -> Effect<Action, Never> {
+    func reduce(into state: inout State, action: Action) -> EffectPublisher<Action, Never> {
         switch action {
         case let .changeSearchText(text):
             state.searchText = text
