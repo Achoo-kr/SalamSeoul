@@ -84,6 +84,9 @@
             ReferencedContainer = "container:SalamSeoul.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <StoreKitConfigurationFileReference
+         identifier = "../../SalamSeoul/SalamKoreaProFeature/MainConfig.storekit">
+      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

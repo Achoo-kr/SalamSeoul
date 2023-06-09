@@ -17,8 +17,10 @@ struct RestaurantDetailView: View {
     }
     
     @State var showSafari = false
+    @AppStorage("isPro", store: EntitlementManager.userDefaults) var hasPro: Bool = false
     
     public let store: Store<RestaurantDetailState, RestaurantDetailAction>
+    
     var body: some View {
         WithViewStore(self.store) { viewStore in
             ZStack(alignment: .leading) {
@@ -26,9 +28,11 @@ struct RestaurantDetailView: View {
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 VStack {
-                    ////ca-app-pub-3940256099942544/2934735716
-                    BannerAd(unitID: "ca-app-pub-7454589661664486/9787009387")
-                        .frame(height: 50)
+                    if !hasPro {
+                        ////ca-app-pub-3940256099942544/2934735716
+                        BannerAd(unitID: "ca-app-pub-7454589661664486/9787009387")
+                            .frame(height: 50)
+                    }
                     ScrollView{
                         VStack(alignment: .leading) {
                             VStack(alignment: .leading, spacing: 3){
