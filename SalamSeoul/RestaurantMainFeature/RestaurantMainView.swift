@@ -197,6 +197,7 @@ struct RestaurantList: View {
                 }.padding(.bottom, 80)
             }
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .reviewCounter()
     }
 }
 

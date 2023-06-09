@@ -25,7 +25,7 @@ struct ContentView: View {
                     RestaurantMainView(
                         store: .init(
                             initialState: RestaurantFeature.State(),
-                            reducer: Reducer(
+                            reducer: AnyReducer(
                                 RestaurantFeature()
                             ).debug(),
                             environment: ()
