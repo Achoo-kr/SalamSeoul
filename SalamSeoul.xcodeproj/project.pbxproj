@@ -21,6 +21,7 @@
 		3632186B29FCCD030002E672 /* FirebaseAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3632186A29FCCD030002E672 /* FirebaseAuthClient.swift */; };
 		364EC78E2A018A3500033C32 /* PrayerTimingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC78D2A018A3500033C32 /* PrayerTimingCellView.swift */; };
 		364EC7902A01C02400033C32 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EC78F2A01C02400033C32 /* CustomTabBar.swift */; };
+		3651D5342A3324770017B879 /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651D5332A3324770017B879 /* RequestReview.swift */; };
 		368B6FED29FFA5A000032E4B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 368B6FEC29FFA5A000032E4B /* GoogleMobileAds */; };
 		368B6FEF29FFACD300032E4B /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B6FEE29FFACD300032E4B /* BannerAd.swift */; };
 		36DF57272A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57262A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift */; };
@@ -106,6 +107,7 @@
 		3632186A29FCCD030002E672 /* FirebaseAuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthClient.swift; sourceTree = "<group>"; };
 		364EC78D2A018A3500033C32 /* PrayerTimingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimingCellView.swift; sourceTree = "<group>"; };
 		364EC78F2A01C02400033C32 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		3651D5332A3324770017B879 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		368B6FEA29FEB6EE00032E4B /* SalamSeoul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalamSeoul.entitlements; sourceTree = "<group>"; };
 		368B6FEE29FFACD300032E4B /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		36DF57242A0971A300B2F4D4 /* RestaurantMainFeatureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMainFeatureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +284,7 @@
 				3632185E29FCABFC0002E672 /* ProfileFeature */,
 				36F9E72C29F2B9E800F478C4 /* Assets.xcassets */,
 				36F9E72E29F2B9E800F478C4 /* Preview Content */,
+				3651D5332A3324770017B879 /* RequestReview.swift */,
 			);
 			path = SalamSeoul;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				3632186B29FCCD030002E672 /* FirebaseAuthClient.swift in Sources */,
 				36F9E76F29F8868600F478C4 /* Restaurant.swift in Sources */,
 				3632185B29FCA4600002E672 /* PrayerTimingView.swift in Sources */,
+				3651D5342A3324770017B879 /* RequestReview.swift in Sources */,
 				36F9E77629F88C1E00F478C4 /* RestaurantDetailFeature.swift in Sources */,
 				3632186129FCB7A70002E672 /* ProfileView.swift in Sources */,
 				3632186929FCCC560002E672 /* RegistrationFeature.swift in Sources */,
