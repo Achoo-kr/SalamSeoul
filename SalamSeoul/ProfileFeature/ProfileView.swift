@@ -158,26 +158,29 @@ struct ProfileView: View {
                         }
                         
                         Divider()
-                        VStack(alignment: .leading){
-                            Text("SeoulSalam Pro")
-                                .foregroundColor(.black)
-                                .bold()
-                                .font(.title3)
-                                .padding(.top)
-                            NavigationLink{
-                                SalamKoreaProView()
-                            } label: {
-                                HStack{
-                                    Text("SeoulSalam Pro")
-                                        .foregroundColor(.black)
-                                        .padding(.leading)
-                                    Text(">")
-                                        .foregroundColor(.black)
-                                        .bold()
+                        
+                        if viewStore.state.isSignedIn {
+                            VStack(alignment: .leading){
+                                Text("SeoulSalam Pro")
+                                    .foregroundColor(.black)
+                                    .bold()
+                                    .font(.title3)
+                                    .padding(.top)
+                                NavigationLink{
+                                    SalamKoreaProView()
+                                } label: {
+                                    HStack{
+                                        Text("SeoulSalam Pro")
+                                            .foregroundColor(.black)
+                                            .padding(.leading)
+                                        Text(">")
+                                            .foregroundColor(.black)
+                                            .bold()
+                                    }
+                                    
                                 }
-                                
+                                .padding(.vertical, 3)
                             }
-                            .padding(.vertical, 3)
                         }
                         
                         VStack(alignment: .leading){

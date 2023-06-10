@@ -18,7 +18,7 @@ struct ReviewCounter: ViewModifier {
                 print("reviewCounter", reviewCounter)
             }
             .onDisappear {
-                if reviewCounter > 3 {
+                if reviewCounter > 50 {
                     reviewCounter = 0
                     DispatchQueue.main.async {
                         if let scene = UIApplication.shared.connectedScenes
