@@ -37,8 +37,11 @@ struct RestaurantFeature: ReducerProtocol {
         case updateRestaurants(Result<[Restaurant], FirebaseApiClient.ApiFailure>)
     }
     
+    
+    
     @Dependency(\.firebaseApi) var firebaseApi
     @Dependency(\.mainQueue) var mainQueue
+    
     
     func reduce(into state: inout State, action: Action) -> EffectPublisher<Action, Never> {
         switch action {

@@ -28,15 +28,18 @@ struct FirebaseApiClient {
 }
 
 private enum FirebaseApiClientKey: DependencyKey {
-  static let liveValue = FirebaseApiClient.live
+    static let liveValue = FirebaseApiClient.live
+    
 }
 
 extension DependencyValues {
-  var firebaseApi: FirebaseApiClient {
-    get { self[FirebaseApiClientKey.self] }
-    set { self[FirebaseApiClientKey.self] = newValue }
-  }
+    var firebaseApi: FirebaseApiClient {
+        get { self[FirebaseApiClientKey.self] }
+        set { self[FirebaseApiClientKey.self] = newValue }
+    }
 }
+
+
 
 //live를 이용한 코드 - live : naming convention으로 해당 모델이나 서비스를 실행하는데 필요한 모든 환경이 구성되어 있어서 라이브로 사용할 수 있다는 뜻
 extension FirebaseApiClient {
