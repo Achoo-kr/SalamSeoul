@@ -116,8 +116,11 @@ struct HaramDeterctorView_Previews: PreviewProvider {
 
 let haramIngredientsList: [String:String] = [
     "돼지고기":"pork",
+    "돼지":"pork",
     "쇠고기":"beef",
+    "소":"beef",
     "닭고기":"chicken",
+    "닭":"chicken",
     "젤라틴":"gelatin",
     "동물성유지":"animal fat",
     "동물성":"from animal",
