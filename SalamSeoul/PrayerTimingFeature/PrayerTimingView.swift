@@ -64,15 +64,21 @@ struct PrayerTimingView: View {
                     
                     Text("Times are based on Seoul")
                     
-                    ScrollView {
-                        PrayerTimingCellView(alarmName: NSLocalizedString("Fajr", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Fajr ?? "None"))
-                        PrayerTimingCellView(alarmName: NSLocalizedString("Sunrise", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Sunrise ?? "None"))
-                        PrayerTimingCellView(alarmName: NSLocalizedString("Dhuhr", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Dhuhr ?? "None"))
-                        PrayerTimingCellView(alarmName: NSLocalizedString("Asr", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Asr ?? "None"))
-                        PrayerTimingCellView(alarmName: NSLocalizedString("Maghrib", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Maghrib ?? "None"))
-                        PrayerTimingCellView(alarmName: NSLocalizedString("Isha", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Isha ?? "None"))
+                    if !viewStore.state.isLoading {
+                        ScrollView {
+                            PrayerTimingCellView(alarmName: NSLocalizedString("Fajr", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Fajr ?? "None"))
+                            PrayerTimingCellView(alarmName: NSLocalizedString("Sunrise", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Sunrise ?? "None"))
+                            PrayerTimingCellView(alarmName: NSLocalizedString("Dhuhr", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Dhuhr ?? "None"))
+                            PrayerTimingCellView(alarmName: NSLocalizedString("Asr", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Asr ?? "None"))
+                            PrayerTimingCellView(alarmName: NSLocalizedString("Maghrib", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Maghrib ?? "None"))
+                            PrayerTimingCellView(alarmName: NSLocalizedString("Isha", comment: ""), alarmTime: getTimeOnly(viewStore.state.timing?.Isha ?? "None"))
+                        }
+                        .padding(.bottom, 80)
+                    } else {
+                        Spacer()
+                        ProgressView()
+                        Spacer()
                     }
-                    .padding(.bottom, 80)
                 }
             }
             .onAppear{

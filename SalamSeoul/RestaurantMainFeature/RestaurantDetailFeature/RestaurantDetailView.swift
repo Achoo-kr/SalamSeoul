@@ -137,6 +137,7 @@ struct RestaurantDetailView: View {
                         .padding()
                         Spacer()
                     }.padding(.bottom, 80)
+                        .padding(.top)
                 }
             }
         }
