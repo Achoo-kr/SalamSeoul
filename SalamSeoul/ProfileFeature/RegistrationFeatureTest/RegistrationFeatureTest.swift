@@ -6,30 +6,49 @@
 //
 
 import XCTest
+import ComposableArchitecture
+import FirebaseAuth
+@testable import SalamSeoul
 
 final class RegistrationFeatureTest: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    //로그인, 로그아웃, 회원가입, 회원탈퇴 테스트
+    
+    
+//    func testSignIn() {
+//        let store = TestStore(
+//            initialState: RegistrationState(),
+//            reducer: registrationReducer,
+//            environment: .init(
+//                client: .live,
+//                mainQueue: .main.eraseToAnyScheduler())
+//        )
+//
+//        let dummyUser = User(
+//            email: "11@11.com",
+//            password: "111",
+//            userName: "111",
+//            isPro: false
+//        )
+//
+//
+//        store.send(.signUpButtonTapped(username: "111", email: "11@11.com", password: "111")) {
+//                $0.email = "11@11.com"
+//                $0.userName = "111"
+//            }
+//
+//        store.receive(.signUpResponse(.success(authDataResult))) {
+//                $0.alertText = "Successfully signed up!"
+//            }
+//
+////            .do { self.testScheduler.advance(by: .seconds(1)) },
+////            .receive(.loginResponse(.success(AuthDataResult()))) {
+////                $0.uid = ""
+////                $0.isSignedIn = true
+////                $0.alertText = "Successfully signed in!"
+////            }
+//
+//
+//    }
+    
 }
