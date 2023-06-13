@@ -12,6 +12,7 @@ struct HaramDeterctorView: View {
     @State private var scannedText = ""
     @FocusState var focusState: Bool
     @State var liveScan = false
+    @AppStorage("isPro", store: EntitlementManager.userDefaults) var hasPro: Bool = false
     
     @AppStorage("selectedLanguage") var selectedLanguage: String?
     
@@ -30,8 +31,10 @@ struct HaramDeterctorView: View {
                             .padding(.vertical)
                     }
                     
-                    BannerAd(unitID: "ca-app-pub-7454589661664486/9787009387")
-                        .frame(height: 50)
+                    if !hasPro {
+                        BannerAd(unitID: "ca-app-pub-7454589661664486/9787009387")
+                            .frame(height: 50)
+                    }
                     
                     ScrollView {
                         
