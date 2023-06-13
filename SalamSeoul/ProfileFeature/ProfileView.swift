@@ -170,7 +170,7 @@ struct ProfileView: View {
                                     SalamKoreaProView()
                                 } label: {
                                     HStack{
-                                        Text("SeoulSalam Pro")
+                                        Text("SeoulSalam Pro & Privacy Policy")
                                             .foregroundColor(.black)
                                             .padding(.leading)
                                         Text(">")

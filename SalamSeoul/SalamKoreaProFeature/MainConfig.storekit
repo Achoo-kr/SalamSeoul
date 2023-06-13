@@ -10,14 +10,14 @@
       "internalID" : "6450119882",
       "localizations" : [
         {
-          "description" : "Remove Ads LifeTime",
-          "displayName" : "Remove Ads LifeTime",
-          "locale" : "en_US"
+          "description" : "! إزالة الإعلانات مدى الحياة",
+          "displayName" : " إزالة الإعلانات مدى الحياة",
+          "locale" : "ar"
         },
         {
-          "description" : "إزالة الإعلانات مدى الحياة",
-          "displayName" : "إزالة الإعلانات مدى الحياة",
-          "locale" : "ar"
+          "description" : " Remove Ads for Life Time!",
+          "displayName" : " Remove Ads LifeTime",
+          "locale" : "en_US"
         }
       ],
       "productID" : "removeAdsLifeTime",
@@ -28,7 +28,7 @@
   "settings" : {
     "_applicationInternalID" : "6448895318",
     "_developerTeamID" : "AU882HP6MX",
-    "_lastSynchronizedDate" : 708024974.45492303
+    "_lastSynchronizedDate" : 708333587.73592305
   },
   "subscriptionGroups" : [
     {
@@ -52,14 +52,14 @@
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "Remove Ads Monthly",
-              "displayName" : "Remove Ads Monthly",
-              "locale" : "en_US"
+              "description" : "! إزالة الإعلانات شهريا",
+              "displayName" : " إزالة الإعلانات شهريا",
+              "locale" : "ar"
             },
             {
-              "description" : "إزالة الإعلانات شهريا",
-              "displayName" : "إزالة الإعلانات شهريا",
-              "locale" : "ar"
+              "description" : " Remove Ads Monthly!",
+              "displayName" : " Remove Ads Monthly",
+              "locale" : "en_US"
             }
           ],
           "productID" : "removeAdsMonthly",
@@ -82,14 +82,14 @@
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "إزالة الإعلانات سنويا",
-              "displayName" : "إزالة الإعلانات سنويا",
-              "locale" : "ar"
-            },
-            {
-              "description" : "Remove Ads Yearly",
+              "description" : "Remove Ads Yearly!",
               "displayName" : "Remove Ads Yearly",
               "locale" : "en_US"
+            },
+            {
+              "description" : "! إزالة الإعلانات سنويا",
+              "displayName" : "إزالة الإعلانات سنويا",
+              "locale" : "ar"
             }
           ],
           "productID" : "removeAdsYearly",

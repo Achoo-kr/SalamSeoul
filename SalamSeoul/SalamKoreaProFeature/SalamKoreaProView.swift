@@ -7,11 +7,14 @@
 
 import SwiftUI
 import StoreKit
+import SafariServices
 
 struct SalamKoreaProView: View {
     @EnvironmentObject private var entitlementManager: EntitlementManager
     
     @EnvironmentObject private var purchaseManager: PurchaseManager
+    @State var showPrivacyPolicy = false
+    @State var showTermsOfService = false
     
     var body: some View {
         ZStack{
@@ -33,7 +36,7 @@ struct SalamKoreaProView: View {
                                 }
                             }
                         } label: {
-                            Text("\(product.displayPrice) - \(product.displayName)")
+                            Text("\(product.displayName) (\(product.displayPrice))")
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(.blue)
@@ -52,6 +55,38 @@ struct SalamKoreaProView: View {
                     } label: {
                         Text("Restore Purchases")
                     }
+                }
+                
+                HStack{
+                    Spacer()
+                    
+                    Button {
+                        showPrivacyPolicy = true
+                    } label: {
+                        Text("Privacy Policy")
+                            .foregroundColor(.black)
+                    }
+                    .sheet(isPresented: $showPrivacyPolicy) {
+                        SafariView(url:URL(string: "https://achoo-ios.tistory.com/31")!)
+                    }
+                    
+                    Spacer()
+                    
+                    Text("|")
+                    
+                    Spacer()
+                    
+                    Button {
+                        showTermsOfService = true
+                    } label: {
+                        Text("Terms Of Service")
+                            .foregroundColor(.black)
+                    }
+                    .sheet(isPresented: $showTermsOfService) {
+                        SafariView(url:URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
+                    }
+                    
+                    Spacer()
                 }
             }.task {
                 _ = Task<Void, Never> {
