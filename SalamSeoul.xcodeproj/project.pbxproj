@@ -26,6 +26,7 @@
 		3651D5402A334D310017B879 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651D53F2A334D310017B879 /* PurchaseManager.swift */; };
 		368B6FED29FFA5A000032E4B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 368B6FEC29FFA5A000032E4B /* GoogleMobileAds */; };
 		368B6FEF29FFACD300032E4B /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B6FEE29FFACD300032E4B /* BannerAd.swift */; };
+		36BD985B2A399932009DFBC8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BD985A2A399932009DFBC8 /* StoreKit.framework */; };
 		36DF57272A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57262A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift */; };
 		36DF57342A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57332A0971B800B2F4D4 /* PrayerTimingFeatureTest.swift */; };
 		36DF57412A0971D300B2F4D4 /* RegistrationFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF57402A0971D300B2F4D4 /* RegistrationFeatureTest.swift */; };
@@ -115,6 +116,7 @@
 		3651D5412A3384080017B879 /* MainConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainConfig.storekit; sourceTree = "<group>"; };
 		368B6FEA29FEB6EE00032E4B /* SalamSeoul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalamSeoul.entitlements; sourceTree = "<group>"; };
 		368B6FEE29FFACD300032E4B /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		36BD985A2A399932009DFBC8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		36DF57242A0971A300B2F4D4 /* RestaurantMainFeatureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMainFeatureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DF57262A0971A300B2F4D4 /* RestaurantMainFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMainFeatureTest.swift; sourceTree = "<group>"; };
 		36DF57312A0971B800B2F4D4 /* PrayerTimingFeatureTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayerTimingFeatureTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 				36F9E73D29F2BC1600F478C4 /* FirebaseAnalytics in Frameworks */,
 				36F9E73829F2BA0A00F478C4 /* ComposableArchitecture in Frameworks */,
 				36F9E74129F2BC1600F478C4 /* FirebaseAuth in Frameworks */,
+				36BD985B2A399932009DFBC8 /* StoreKit.framework in Frameworks */,
 				36F9E74729F2BC1600F478C4 /* FirebaseFirestore in Frameworks */,
 				36F9E74929F2BC1600F478C4 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -261,6 +264,7 @@
 		36DF57472A09730900B2F4D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36BD985A2A399932009DFBC8 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
