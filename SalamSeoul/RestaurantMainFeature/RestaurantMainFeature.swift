@@ -76,3 +76,6 @@ public let restaurantReducer = Reducer<RestaurantState, RestaurantAction, Restau
 
     }
 }
+
+
+//여기 바뀝니다잉 파란색으로 왼쪽에 변경됐다고 뜨는거에여 지금 ㅇㅋ?
