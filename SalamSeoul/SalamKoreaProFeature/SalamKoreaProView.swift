@@ -23,38 +23,40 @@ struct SalamKoreaProView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
                 if entitlementManager.hasPro {
-                    Text("Thank you for purchasing pro!")
-                } else {
-                    Text("Products")
-                    ForEach(purchaseManager.products) { product in
-                        Button {
-                            _ = Task<Void, Never> {
-                                do {
-                                    try await purchaseManager.purchase(product)
-                                } catch {
-                                    print(error)
-                                }
-                            }
-                        } label: {
-                            Text("\(product.displayName) (\(product.displayPrice))")
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(.blue)
-                                .clipShape(Capsule())
-                        }
-                    }
-                    
+                    Text("You Already Have!!! Thanks!!!")
+                }
+                
+                Text("Products")
+                ForEach(purchaseManager.products) { product in
                     Button {
                         _ = Task<Void, Never> {
                             do {
-                                try await AppStore.sync()
+                                try await purchaseManager.purchase(product)
                             } catch {
                                 print(error)
                             }
                         }
                     } label: {
-                        Text("Restore Purchases")
+                        Text("\(product.displayName) (\(product.displayPrice))")
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(.blue)
+                            .clipShape(Capsule())
                     }
+                    
+                    
+                }
+                
+                Button {
+                    _ = Task<Void, Never> {
+                        do {
+                            try await AppStore.sync()
+                        } catch {
+                            print(error)
+                        }
+                    }
+                } label: {
+                    Text("Restore Purchases")
                 }
                 
                 HStack{

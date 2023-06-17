@@ -79,10 +79,11 @@
 "Please Restart the App" = "يرجى إعادة تشغيل التطبيق";
 "OK" = "نعم";
 "none" = "غير موجود";
-"Thank you for purchasing pro!" = "شكرا لك على شراء الموالية!";
+"You Already Have!!! Thanks!!!" = "لديك بالفعل!!! شكرًا";
 "Products" = "منتجات";
 "SeoulSalam Pro" = "سول سلام برو";
 "SeoulSalam Pro & Privacy Policy" = "سيول سلام برو وسياسة الخصوصية";
-"Restore purchases" = "استعادة المشتريات";
+"Restore Purchases" = "استعادة المشتريات";
 "Terms Of Service" = "شروط الخدمة";
 "Privacy Policy" = "سياسة الخصوصية";
+
