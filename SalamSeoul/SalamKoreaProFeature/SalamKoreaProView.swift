@@ -21,9 +21,13 @@ struct SalamKoreaProView: View {
             Image("bg")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+            
             VStack(spacing: 20) {
+                
                 if entitlementManager.hasPro {
-                    Text("You Already Have!!! Thanks!!!")
+                    Text("You Already Have one!!! Thanks!!!")
+                } else {
+                    Text("")
                 }
                 
                 Text("Products")
